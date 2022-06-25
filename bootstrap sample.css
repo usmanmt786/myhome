@@ -1,0 +1,109 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+   
+    position: relative;
+    
+    
+}
+.bg{
+    background-color: rgb(226, 255, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-item a{
+    
+    height: 33px;
+    transition: 0.2s;
+}
+.nav-item a:hover{
+    border-bottom: 2px solid black;
+
+}
+.nav-item a:focus{
+    outline: auto;
+}
+.nav-item img{
+  padding: 0;
+  transition: 0.5s;
+  width: 25px;
+  width: 25px;
+}
+.nav-item img:hover{
+    width: 30px;
+    height: 30px;
+    
+}
+.box{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(227, 255, 246);
+  
+}
+.mble{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:fixed;
+    top: 2%;
+    width: 100%;
+    display: none;
+    overflow: auto;
+ 
+   
+   
+    
+
+}
+.btns img{
+    float: left;
+    
+
+    
+}
+.btns h6{
+    float: left;
+}
+
+.btns img{
+    width: 3ex;
+}
+.link a{
+    color:black;
+    text-decoration: none;
+    
+}
+.link ul{
+    list-style-type: none;
+}
+.link ul img{
+    width: 6%;
+}
+.quik li{
+    float: left;
+    font-size: 85%;
+
+}
+.quik li:active{
+    
+    border-bottom: 2px solid black;
+
+}
+#navbut:focus{
+    border:0 !important;
+    
+}
+#navbut{
+    z-index: 5;
+
+}
+#simg{
+    display: none;
+    line-height: 30px;
+   color:black;
+    margin-left: .45ex;
+    margin-right: .45ex;
+    
+    
+    
+}

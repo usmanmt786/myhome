@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="facebook.css" type="text/css">
+    <title>Facebook</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="facebook.js"></script>
+</head>
+<body id="body">
+    <div class="full-body">
+        <div class="main-body" id="body-main">
+            <div class="in-body">
+                <div class="content">
+                    <div class="logo-div">
+                        <div class="logo-img">
+                            <img class="logo" src="img/fb logo.svg" alt="">
+                            <h2 class="note">Facebook helps you connect and share with the people in your life.</h2>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="login">
+                        
+                        <form action="" class="form1">
+                            <input oninput="changecolor()" id="email1"class="email" type="text" placeholder="Email address or phone number" autofocus>
+                            
+                            <div  class="div-pass"id="divpass">
+                                <input id="pass-word" class="password"
+                                onfocus="borderit()" onblur="borderout()" oninput="show()"
+                                 type="password" placeholder="Password">
+                                <button  type="button" onclick="hide()"  id="show-butt"class="show-button"><img class="show-img"src="img/visibility_off_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+                                <button onclick="showw()" type="button"  id="hide-butt"  class="hide-button"><img class="show-img" src="img/visibility_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+                                
+                            </div>
+                        
+                            <input class="submit" id="login" type="submit" value="Log In">
+                            <a class="forgotten" href="facebook.html"><p>Forgotten password?</p></a>
+                            <div class="line"></div>
+                            <div class="button">
+                                
+                                    <button 
+                                    class="create" onfocus ="create()" type="button" id="crtbtn">Create new account</button>
+                                
+
+                            </div>
+                        </form>
+                        <p class="page"><a href="facebook.html">Create a Page</a>  for a celebrity, brand or business.</p>
+                    </div>
+                   
+                    </div>
+                    
+                   
+    
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+        
+
+    </div>
+    <div id="create-body">
+        <div id="crt-accnt">
+            <div id="form-body">
+               <div class="title-top">
+                   <h1>Sign Up</h1>
+                   <p>It's quick and easy.</p>
+                   <button id="cose" onclick="cose()"class="close"><img width="23px" src="img/close_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+               </div>
+               <form class="details" id="loginform">
+                <div id="hint1">
+                   <div class="fir"> What's your name? </div>
+                   <div class="trngle"></div>
+                </div>
+                <div id="hint2">
+                    <div class="sur">
+                        What"s your name?
+                    </div>
+                    <div class="trngle2"></div>
+
+                </div>
+                   <input name="fir"class="erros" oninput="inputdetails()" onblur="phchange()" type="text"  id="firname" placeholder="First name" >
+                   
+                   <input name="sur" class="erros" oninput="inputdetails()" type="text" id="surname" placeholder="Surname"><br>
+                   <input name="email"class="erros" oninput="inputdetails()" type="text" id="email" placeholder="Mobile number or Email address"><br>
+                   <input name="password"class="erros" oninput="inputdetails()" type="text" id="newpass" placeholder="New password"><br>
+                   <label for="">Date of birth 
+                       <button title="Click for more information" id="help1"><img width="13px" height="13px"
+                        src="img/images-removebg-preview.png" alt=""></button>
+                   </label><br>
+                   <select class="dob" name="" id="days">
+                       <option value="">1</option>
+                       <option value="">2</option>
+                       <option value="">3</option>
+                       <option value="">4</option>
+                       <option value="">5</option>
+                       <option value="">6</option>
+                       <option value="">7</option>
+                       <option value="">8</option>
+                       <option value="">9</option>
+                       <option value="">10</option>
+                       <option value="">11</option>
+                       <option value="">12</option>
+                       <option value="">13</option>
+                       <option value="">14</option>
+                       <option value="">15</option>
+                       <option value="">16</option>
+                       <option value="">17</option>
+                       <option value="">18</option>
+                       <option value="">19</option>
+                       <option value="">20</option>
+                       <option value="">21</option>
+                       <option value="">22</option>
+                       <option value="">23</option>
+                       <option value="">24</option>
+                       <option value="">25</option>
+                       <option value="">26</option>
+                       <option value="">27</option>
+                       <option value="">28</option>
+                       <option value="">29</option>
+                       <option value="">30</option>
+                       <option value="">31</option>
+                   </select>
+                   <select class="dob"name="" id="months">
+                       <option value="">Jan</option>
+                       <option value="">Feb</option>
+                       <option value="">Mar</option>
+                       <option value="">Apr</option>
+                       <option value="">May</option>
+                       <option value="">Jun</option>
+                       <option value="">Jul</option>
+                       <option value="">Aug</option>
+                       <option value="">Sep</option>
+                       <option value="">Oct</option>
+                       <option value="">Nov</option>
+                       <option value="">Dec</option>
+                   </select>
+                   <select class="dob" name="" id="years">
+                       <option value="">2022</option>
+                       <option value="">2021</option>
+                       <option value="">2020</option>
+                       <option value="">2019</option>
+                       <option value="">2018</option>
+                       <option value="">2017</option>
+                       <option value="">2016</option>
+                       <option value="">2015</option>
+                       <option value="">2014</option>
+                       <option value="">2013</option>
+                       <option value="">2012</option>
+                       <option value="">2011</option>
+                       <option value="">2010</option>
+                       <option value="">2009</option>
+                       <option value="">2008</option>
+                       <option value="">2007</option>
+                       <option value="">2006</option>
+                       <option value="">2005</option>
+                       <option value="">2004</option>
+                       <option value="">2003</option>
+                       <option value="">2002</option>
+                       <option value="">2001</option>
+                       <option value="">2000</option>
+                       <option value="">1999</option>
+                       <option value="">1998</option>
+                       <option value="">1997</option>
+                       <option value="">1996</option>
+                       <option value="">1995</option>
+                       <option value="">1994</option>
+                       <option value="">1993</option>
+                       <option value="">1992</option>
+                       <option value="">1991</option>
+                       <option value="">1990</option>
+                       <option value="">1989</option>
+                       <option value="">1988</option>
+                       <option value="">1987</option>
+                       <option value="">1986</option>
+                       <option value="">1985</option>
+                       <option value="">1984</option>
+                       <option value="">1983</option>
+
+                       
+                   </select><br>
+                   <label for="">Gender 
+                       <button title="Click for more information" id="help2"><img width="13px" height="13px" src="img/images-removebg-preview.png" alt=""></button>
+                   </label><br>
+                   <div class="female">
+                       <label for="">Female</label>
+                       <input   class="dotfem" type="radio" name="gender">
+                   </div>
+                   <div class="male">
+                    <label for="">Male</label>
+                    <input class="dotmal" type="radio" name="gender">
+                   </div>
+                  <div class="custom">
+                    <label for="">Custom</label>
+                    <input  class="dotcus" type="radio" name="gender">
+                  </div><br>
+                  <div class="descript">
+                      <p>By clicking Sign Up, you agree to our <a target="blank" href="boot camb1.html">Terms</a>, <a href="boot camb1.html">Data Policy</a> and <a href="boot camb1.html">Cookie Policy</a>.
+                           You <br> may receive SMS notifications from us and can opt out at any time.</p>
+                  </div>
+                  <div class=signup>
+                      <input type="submit" value="Sign up">
+    
+                  </div>
+                   
+
+
+
+                </form>
+            </div>
+    
+        </div>
+
+    </div>
+</body>
+
+    
+
+
+
+</html>
